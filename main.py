@@ -1,5 +1,5 @@
-from dealData import getEnt, deal
+from dealData import getEnt, deal, change
+
 if __name__ == '__main__':
     df = deal('./iris.csv')
-    part = df['sepalLength'].unique()
-    print(part)
+    change(df)
