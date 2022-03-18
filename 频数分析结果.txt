@@ -1,0 +1,55 @@
+取频数分布的极小值点划分属性
+sepalLength [5.375, 5.875, 7.375]
+sepalWidth  []
+petalLength [3.125, 4.375, 4.875, 5.375, 6.375]
+petalWidth  [0.625]
+
+
+结合“面积分析结果”，spealWidth决定选平均数（3.0540000000000007）来划分
+sepalLength [5.375, 5.875, 7.375]
+sepalWidth  [3.054]
+petalLength [3.125, 4.375, 4.875, 5.375, 6.375]
+petalWidth  [0.625]
+
+
+属性符号化
+sepalLength ['短', '中', '长'，'超长']
+sepalWidth  ['短','长']
+petalLength ['超短','短', '中', '长'，'超长','极长']
+petalWidth  ['短','长']
+
+
+['sepalLength', 'sepalWidth', 'petalLength', 'petalWidth']
+[
+    [5.375, 5.875, 7.375],
+    [3.054],
+    [3.125, 4.375, 4.875, 5.375, 6.375],
+    [0.625]
+]
+[
+    ['短', '中', '长','超长'],
+    ['短','长'],
+    ['超短','短', '中', '长','超长','极长'],
+    ['短','长']
+]
+[
+     ['short', 'medium', 'long','extra-long'],
+     ['short','long'],
+     ['super-short','short','medium','long','super-long','extremely-long'],
+     ['short','long']
+]
+
+以上基于程序求出的全部极小值点，petalLength属性频数极小值点太多，而观察图发现，只要一个极小值点比较合适，取2.5
+['sepalLength', 'sepalWidth', 'petalLength', 'petalWidth']
+[
+    [5.375, 5.875, 7.375],
+    [3.054],
+    [2.5],
+    [0.625]
+]
+[
+     ['short', 'medium', 'long','extra-long'],
+     ['short','long'],
+     ['short','long'],
+     ['short','long']
+]
